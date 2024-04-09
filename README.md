@@ -1,4 +1,4 @@
-# language-translator
+
 <h1>Language Translator Project</h1>
 <p>An Initiative for Engineering Clinics Project</p>
 <h2>Contributors</h2>
