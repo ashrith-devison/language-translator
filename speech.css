@@ -1,38 +1,118 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #c9e5ff, #f5f5f5);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-    color: #333;
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
 }
 
-textarea {
-    width: 400px;
-    height: 200px;
-    resize: none;
-    margin: 20px 0;
-    padding: 10px;
-    font-size: 16px;
-    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
-    border: 3px solid #282525;
-    border-radius: 5px;
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
 }
 
 button {
-    padding: 10px;
-    font-size: 16px;
-    background: linear-gradient(to bottom, #04154d, #0e015e);
-    color: #fff;
+    padding: 8px 12px;
     border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    transition: background 0.3s ease;
-    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.client {
+    background-color: #dcf8c6;
+    align-self: flex-start;
+    margin-left: auto; /* Push to the left */
+    border-top-left-radius: 0;
+}
+
+.server {
+    background-color: #e2e2e2;
+    align-self: flex-end;
+    margin-right: auto; /* Push to the right */
+    border-top-right-radius: 0;
+}
+
+#chat-box {
+    padding: 10px;
+}
+
+#language,
+#start_recording {
+    margin: 10px;
+}
+
+#record {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#convert_text {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

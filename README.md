@@ -5,7 +5,7 @@
 <ul>
   <li>Ashrith Sai</li>
   <li>Bharath Krishna</li>
-  <li>Mamatha Shri</li>
+  <li>Mamatha Sathvik</li>
   <li>Ramya</li>
   <li>Aishwarya</li>
   <li>Venu</li>

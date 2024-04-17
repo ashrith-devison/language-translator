@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,35 @@
     <link rel="stylesheet" href="/language-translator/speech.css">
 </head>
 <body>
-    <form>
-        <select id="language" required>
-            <option value="en-US" selected>English</option>
-            <option value="te-IN">telugu</option>
-        </select>
-    </form>
-    <button type="button" id="start_recording">Confirm</button>
-    <div id="record">  
-        <textarea id="convert_text"></textarea>  
-        <button type="button">Confirm above text</button>
+    <div id="chat-history">
+        <div id="server-message" class="message server">
+            Welcome Team to Work with me
+        </div>
+        <div id="client-message" class="message client">
+            Thank You for Invitation
+        </div>
     </div>
-    <script src="/language-translator/speech.js"></script>
+<body>
+    <button id="openPopup">Open Popup</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <form id="chat-box">
+                <select id="language" required>
+                    <option value="en-US" selected>English</option>
+                    <option value="te-IN">Telugu</option>
+                </select>
+                <button type="button" id="start_recording">Record</button>
+                <textarea id="convert_text"></textarea>
+                <button type="button" onclick="sendMessage()">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="speech.js"></script>
+</body>
+</html>
+
 </body>
 </html>
