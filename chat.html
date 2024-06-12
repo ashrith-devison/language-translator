@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat bot</title>
+    <link rel="stylesheet" type="text/css" href="/chat.css">
+</head>
+<body>
+    <div id="chat-box">
+        <div id="chat-container">
+            <div id="chat-header">
+                <h2>Chat Bot</h2>
+                <select id="language-record">
+                    <option value="en-US">English</option>
+                    <option value="te-In">Telugu</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="ta-IN">Tamil</option>
+                    <option value="bn-IN">Bengali</option>
+                </select>
+            </div>
+            <div id="chat-body">
+                <div id="chat-content">
+                    <div id="chat-message">
+                        <p>Hi, I am a chat bot. How can I help you?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="chat-footer">
+                <input type="text" id="chat-input" autocomplete="off" placeholder="Type a message...">
+                <button id="record" type="button">record</button>
+                <button id="send-button" type="button" onclick="displayMessage();">Send</button>  
+            </div>
+        </div>
+    </div>
+    <script src="chat-request.js"></script>
+</body>
+</html>
